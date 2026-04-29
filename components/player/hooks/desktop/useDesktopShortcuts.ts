@@ -92,8 +92,8 @@ export function useDesktopShortcuts({
                         videoRef.current.muted = newVolUp === 0;
                     }
                     setIsMuted(newVolUp === 0);
-                    localStorage.setItem('kvideo-volume', String(newVolUp));
-                    localStorage.setItem('kvideo-muted', String(newVolUp === 0));
+                    localStorage.setItem('ricebabyvideo-volume', String(newVolUp));
+                    localStorage.setItem('ricebabyvideo-muted', String(newVolUp === 0));
                     showVolumeBarTemporarily();
                     break;
                 case 'arrowdown':
@@ -105,8 +105,8 @@ export function useDesktopShortcuts({
                         videoRef.current.muted = newVolDown === 0;
                     }
                     setIsMuted(newVolDown === 0);
-                    localStorage.setItem('kvideo-volume', String(newVolDown));
-                    localStorage.setItem('kvideo-muted', String(newVolDown === 0));
+                    localStorage.setItem('ricebabyvideo-volume', String(newVolDown));
+                    localStorage.setItem('ricebabyvideo-muted', String(newVolDown === 0));
                     showVolumeBarTemporarily();
                     break;
             }

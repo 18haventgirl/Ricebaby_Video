@@ -21,14 +21,14 @@ Previously, the player forced **Web Fullscreen** (Custom UI) on all iOS devices 
 - **Cons:**
   - **No Danmaku (Bullet Comments)** in fullscreen.
   - Custom subtitle styling may be limited.
-  - Default iOS controls instead of KVideo's custom controls.
+  - Default iOS controls instead of RicebabyVideo's custom controls.
 
 ### 2. Web Fullscreen (Window/Custom)
 **Best for:** Danmaku, Advanced Controls, Subtitles.
 
 - **Pros:**
   - **Danmaku works in fullscreen!**
-  - Uses KVideo's custom interface and controls.
+  - Uses RicebabyVideo's custom interface and controls.
   - Better subtitle styling and positioning.
   - Quick access to playback speed, quality, and episode selection without leaving fullscreen.
 - **Cons:**

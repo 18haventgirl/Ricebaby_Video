@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  kvideo:
-    container_name: kvideo
+  ricebabyvideo:
+    container_name: ricebabyvideo
     build:
       context: .
       dockerfile: Dockerfile

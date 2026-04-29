@@ -4,12 +4,12 @@ import { arrayMove } from '@dnd-kit/sortable';
 
 const DEFAULT_TAG = { id: 'popular', label: '热门', value: '热门' };
 
-const STORAGE_KEY_PREFIX = 'kvideo_custom_tags_';
+const STORAGE_KEY_PREFIX = 'ricebabyvideo_custom_tags_';
 
 export function useTagManager() {
     const [contentType, setContentType] = useState<'movie' | 'tv'>(() => {
         if (typeof window === 'undefined') return 'movie';
-        const saved = localStorage.getItem('kvideo_default_content_type');
+        const saved = localStorage.getItem('ricebabyvideo_default_content_type');
         return saved === 'tv' ? 'tv' : 'movie';
     });
     const [selectedTag, setSelectedTag] = useState(DEFAULT_TAG.value);
@@ -21,7 +21,7 @@ export function useTagManager() {
 
     // Persist content type preference
     useEffect(() => {
-        localStorage.setItem('kvideo_default_content_type', contentType);
+        localStorage.setItem('ricebabyvideo_default_content_type', contentType);
     }, [contentType]);
 
     const storageKey = `${STORAGE_KEY_PREFIX}${contentType}`;

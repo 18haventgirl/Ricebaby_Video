@@ -118,8 +118,8 @@ const createFavoritesStore = (name: string) =>
         )
     );
 
-export const useFavoritesStore = createFavoritesStore(profiledKey('kvideo-favorites-store'));
-export const usePremiumFavoritesStore = createFavoritesStore(profiledKey('kvideo-premium-favorites-store'));
+export const useFavoritesStore = createFavoritesStore(profiledKey('ricebabyvideo-favorites-store'));
+export const usePremiumFavoritesStore = createFavoritesStore(profiledKey('ricebabyvideo-premium-favorites-store'));
 
 /**
  * Helper hook to get the appropriate favorites store

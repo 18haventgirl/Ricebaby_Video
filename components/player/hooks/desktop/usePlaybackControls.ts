@@ -136,7 +136,7 @@ export function usePlaybackControls({
         videoRef.current.playbackRate = speed;
         setPlaybackRate(speed);
         // Persist playback rate to localStorage
-        localStorage.setItem('kvideo-playback-rate', speed.toString());
+        localStorage.setItem('ricebabyvideo-playback-rate', speed.toString());
         setShowSpeedMenu(false);
         if (speedMenuTimeoutRef.current) {
             clearTimeout(speedMenuTimeoutRef.current);

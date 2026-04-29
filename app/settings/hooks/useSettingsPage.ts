@@ -95,7 +95,7 @@ export function useSettingsPage() {
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = `kvideo-settings-${Date.now()}.json`;
+        a.download = `ricebabyvideo-settings-${Date.now()}.json`;
         a.click();
         URL.revokeObjectURL(url);
     };

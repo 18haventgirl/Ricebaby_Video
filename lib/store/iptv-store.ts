@@ -153,7 +153,7 @@ export const useIPTVStore = create<IPTVStore>()(
       setLoading: (loading) => set({ isLoading: loading }),
     }),
     {
-      name: 'kvideo-iptv-store',
+      name: 'ricebabyvideo-iptv-store',
       partialize: (state) => ({
         sources: state.sources,
         lastRefreshed: state.lastRefreshed,

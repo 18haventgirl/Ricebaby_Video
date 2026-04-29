@@ -225,8 +225,8 @@ const createHistoryStore = (name: string) =>
     )
   );
 
-export const useHistoryStore = createHistoryStore(profiledKey('kvideo-history-store'));
-export const usePremiumHistoryStore = createHistoryStore(profiledKey('kvideo-premium-history-store'));
+export const useHistoryStore = createHistoryStore(profiledKey('ricebabyvideo-history-store'));
+export const usePremiumHistoryStore = createHistoryStore(profiledKey('ricebabyvideo-premium-history-store'));
 
 /**
  * Helper hook to get the appropriate history store

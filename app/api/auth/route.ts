@@ -55,7 +55,7 @@ function parseAccounts(): AccountEntry[] {
  * Uses a salt to avoid rainbow table attacks.
  */
 async function generateProfileId(password: string): Promise<string> {
-  const salt = 'kvideo-profile-salt-v1';
+  const salt = 'ricebabyvideo-profile-salt-v1';
   const data = new TextEncoder().encode(password + salt);
   const hash = await crypto.subtle.digest('SHA-256', data);
   const hashArray = Array.from(new Uint8Array(hash));

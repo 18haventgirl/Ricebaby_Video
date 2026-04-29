@@ -28,7 +28,7 @@ export interface AuthSession {
   customPermissions?: Permission[];
 }
 
-const SESSION_KEY = 'kvideo-session';
+const SESSION_KEY = 'ricebabyvideo-session';
 
 export function getSession(): AuthSession | null {
   if (typeof window === 'undefined') return null;
@@ -62,10 +62,10 @@ export function clearSession(): void {
   sessionStorage.removeItem(SESSION_KEY);
   localStorage.removeItem(SESSION_KEY);
   // Clear search cache so new session gets fresh results
-  localStorage.removeItem('kvideo_search_cache');
+  localStorage.removeItem('ricebabyvideo_search_cache');
   // Also clear old unlock keys for backward compat cleanup
-  sessionStorage.removeItem('kvideo-unlocked');
-  localStorage.removeItem('kvideo-unlocked');
+  sessionStorage.removeItem('ricebabyvideo-unlocked');
+  localStorage.removeItem('ricebabyvideo-unlocked');
 }
 
 export function isAdmin(): boolean {

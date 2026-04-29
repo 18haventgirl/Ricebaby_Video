@@ -20,7 +20,7 @@ interface UserSourcesState {
 
 function getStorageKey(): string {
   const profileId = getProfileId();
-  return `kvideo-user-sources-${profileId}`;
+  return `ricebabyvideo-user-sources-${profileId}`;
 }
 
 function getState(): UserSourcesState {

@@ -1,6 +1,6 @@
 # 贡献指南 (Contributing Guide)
 
-欢迎来到 **KVideo** 项目！我们非常感谢你愿意为这个项目做出贡献。无论是修复 Bug、添加新功能、改进文档，还是提出建议，你的每一份贡献都将让这个项目变得更好。
+欢迎来到 **RicebabyVideo** 项目！我们非常感谢你愿意为这个项目做出贡献。无论是修复 Bug、添加新功能、改进文档，还是提出建议，你的每一份贡献都将让这个项目变得更好。
 
 为了确保协作顺畅、代码质量一致，请在提交贡献前仔细阅读本指南。
 
@@ -49,7 +49,7 @@
 
 如果这是你第一次为开源项目做贡献，我们推荐：
 
-1. 浏览 [GitHub Issues](https://github.com/KuekHaoYang/KVideo/issues)
+1. 浏览 [GitHub Issues](https://github.com/18haventgirl/RicebabyVideo/issues)
 2. 寻找标记为 `good first issue` 的问题
 3. 在 Issue 中评论，表明你想要解决这个问题
 4. 按照本指南进行开发和提交
@@ -76,11 +76,11 @@
 
 ```bash
 # 克隆你 Fork 的仓库
-git clone https://github.com/YOUR_USERNAME/KVideo.git
-cd KVideo
+git clone https://github.com/YOUR_USERNAME/RicebabyVideo.git
+cd RicebabyVideo
 
 # 添加上游仓库
-git remote add upstream https://github.com/KuekHaoYang/KVideo.git
+git remote add upstream https://github.com/18haventgirl/RicebabyVideo.git
 ```
 
 #### 3. 安装依赖
@@ -641,7 +641,7 @@ git push origin feat/your-feature-name
 
 - 访问你的 Fork 页面
 - 点击 "Compare & pull request"
-- 选择目标分支：`KuekHaoYang/KVideo:main`
+- 选择目标分支：`18haventgirl/RicebabyVideo:main`
 
 ### PR 描述模板
 
@@ -915,16 +915,16 @@ git push origin feat/your-feature --force
 1. **查看文档**：README.md 和本指南
 2. **搜索 Issues**：可能已经有人问过相同的问题
 3. **提出问题**：在 Discussions 或 Issues 中提问
-4. **联系维护者**：[@KuekHaoYang](https://github.com/KuekHaoYang)
+4. **联系维护者**：[@18haventgirl](https://github.com/18haventgirl)
 
 ## 🎉 感谢你的贡献！
 
-感谢你花时间阅读本指南，并为 KVideo 做出贡献。每一个贡献，无论大小，都让这个项目变得更好。
+感谢你花时间阅读本指南，并为 RicebabyVideo 做出贡献。每一个贡献，无论大小，都让这个项目变得更好。
 
 我们期待看到你的 Pull Request！
 
 ---
 
 <div align="center">
-  <strong>让我们一起打造更好的 KVideo！</strong>
+  <strong>让我们一起打造更好的 RicebabyVideo！</strong>
 </div>

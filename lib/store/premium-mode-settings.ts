@@ -6,7 +6,7 @@
 
 import type { SortOption, SearchDisplayMode, ProxyMode, AdFilterMode } from './settings-store';
 
-const PREMIUM_MODE_SETTINGS_KEY = 'kvideo-premium-mode-settings';
+const PREMIUM_MODE_SETTINGS_KEY = 'ricebabyvideo-premium-mode-settings';
 
 export interface ModeSettings {
   sortBy: SortOption;

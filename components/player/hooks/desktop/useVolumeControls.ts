@@ -29,11 +29,11 @@ export function useVolumeControls({
             videoRef.current.muted = false;
             videoRef.current.volume = volume || 0.5;
             setIsMuted(false);
-            localStorage.setItem('kvideo-muted', 'false');
+            localStorage.setItem('ricebabyvideo-muted', 'false');
         } else {
             videoRef.current.muted = true;
             setIsMuted(true);
-            localStorage.setItem('kvideo-muted', 'true');
+            localStorage.setItem('ricebabyvideo-muted', 'true');
         }
     }, [videoRef, isMuted, volume, setIsMuted]);
 
@@ -55,8 +55,8 @@ export function useVolumeControls({
         videoRef.current.volume = pos;
         videoRef.current.muted = pos === 0;
         setIsMuted(pos === 0);
-        localStorage.setItem('kvideo-volume', String(pos));
-        localStorage.setItem('kvideo-muted', String(pos === 0));
+        localStorage.setItem('ricebabyvideo-volume', String(pos));
+        localStorage.setItem('ricebabyvideo-muted', String(pos === 0));
     }, [videoRef, volumeBarRef, setVolume, setIsMuted]);
 
     const handleVolumeMouseDown = useCallback((e: any) => {
@@ -75,8 +75,8 @@ export function useVolumeControls({
             videoRef.current.volume = pos;
             videoRef.current.muted = pos === 0;
             setIsMuted(pos === 0);
-            localStorage.setItem('kvideo-volume', String(pos));
-            localStorage.setItem('kvideo-muted', String(pos === 0));
+            localStorage.setItem('ricebabyvideo-volume', String(pos));
+            localStorage.setItem('ricebabyvideo-muted', String(pos === 0));
         };
 
         const handleMouseUp = () => {

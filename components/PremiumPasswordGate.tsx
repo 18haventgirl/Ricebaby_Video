@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Lock } from 'lucide-react';
 
-const PREMIUM_UNLOCK_KEY = 'kvideo-premium-unlocked';
+const PREMIUM_UNLOCK_KEY = 'ricebabyvideo-premium-unlocked';
 
 export function PremiumPasswordGate({ children }: { children: React.ReactNode }) {
     const [isLocked, setIsLocked] = useState(true);
