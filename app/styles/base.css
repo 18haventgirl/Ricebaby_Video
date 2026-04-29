@@ -44,6 +44,14 @@ select:focus-visible {
     border-radius: var(--radius-full);
 }
 
+/* Logo focus - no outline */
+a[aria-label="返回首页"]:focus-visible,
+a[data-focusable]:first-child:focus-visible,
+nav a:first-child:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 /* Scrollbar Styles */
 ::-webkit-scrollbar {
     width: 10px;
