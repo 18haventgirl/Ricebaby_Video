@@ -1,30 +1,48 @@
 # 🎬 RicebabyVideo
 
-> 一个基于 Next.js 16 构建的现代化视频聚合播放平台。采用独特的 "Liquid Glass" 设计语言，提供流畅的视觉体验和强大的视频搜索功能。
+<p align="center">
+  <img src="public/logo.svg" alt="RicebabyVideo Logo" width="200">
+</p>
 
-**🚀 在线体验：[https://ricebabyvideo.pages.dev/](https://ricebabyvideo.pages.dev/)**
+<p align="center">
+  <strong>🎬 下一代视频聚合播放平台</strong><br>
+  <em>多源搜索 · 智能播放 · 沉浸体验</em>
+</p>
 
-[![Next.js](https://img.shields.io/badge/Next.js-16.1-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19.2-blue?style=for-the-badge&logo=react)](https://react.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+<p align="center">
+  <a href="https://ricebabyvideo.pages.dev/">🚀 在线体验</a> · 
+  <a href="#-快速部署">📦 快速部署</a> · 
+  <a href="#-核心功能">✨ 功能特性</a>
+</p>
+
+<p align="center">
+  [![Next.js](https://img.shields.io/badge/Next.js-16.1-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+  [![React](https://img.shields.io/badge/React-19.2-blue?style=for-the-badge&logo=react)](https://react.dev/)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+  [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+</p>
 
 ---
 
 ## 📖 项目简介
 
-**RicebabyVideo** 是一个高性能、现代化的视频聚合与播放应用，专注于提供极致的用户体验和视觉设计。本项目利用 Next.js 16 的最新特性，结合 React 19 和 Tailwind CSS v4，打造了一个既美观又强大的视频浏览平台。
+**RicebabyVideo** 是一个基于 Next.js 16 + React 19 + Tailwind CSS v4 构建的现代化视频聚合播放平台。
 
-### 🎨 核心设计理念：Liquid Glass（液态玻璃）
+### 🎯 我们解决什么问题？
 
-项目的视觉设计基于 **"Liquid Glass"** 设计系统，这是一套融合了以下特性的现代化 UI 设计语言：
+传统视频网站内容分散，用户需要在多个平台间切换。RicebabyVideo 通过 **多源聚合搜索** 技术，让你在一个界面内同时搜索数十个视频源，实时返回结果，一键播放。
 
-- ✨ **玻璃拟态效果**：通过 `backdrop-filter` 实现的磨砂半透明效果，让 UI 元素如同真实的玻璃材质
-- 🔄 **通用柔和度**：统一使用 `rounded-2xl` 和 `rounded-full` 两种圆角半径，创造和谐的视觉体验
-- 💡 **光影交互**：悬停和聚焦状态下的内发光效果，模拟光线被"捕获"的物理现象
-- ⚡ **流畅动画**：基于物理的 `cubic-bezier` 曲线，实现自然的加速和减速过渡
-- 🎯 **深度层级**：清晰的 z-axis 层次结构，增强空间感和交互反馈
+### 💎 核心优势
+
+| 优势 | 说明 |
+|------|------|
+| 🔍 **多源聚合** | 同时搜索多个视频源，SSE 实时返回结果，告别逐个查找 |
+| 🎥 **智能播放** | HLS 流媒体、自动切源、画中画、Chromecast 投屏、弹幕支持 |
+| 🎨 **Liquid Glass** | 独特的液态玻璃设计语言，玻璃拟态 + 光影交互 + 流畅动画 |
+| 📱 **全端适配** | 桌面、平板、手机、TV 大屏完美适配，支持 PWA 安装 |
+| 🔒 **隐私优先** | 所有数据本地存储，支持多账户隔离，不收集任何用户数据 |
+| 🆓 **完全免费** | MIT 开源协议，可部署到 Vercel、Cloudflare Pages 或自己的服务器 |
 
 ---
 

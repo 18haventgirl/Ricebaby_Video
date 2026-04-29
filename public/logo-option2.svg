@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <!-- 渐变 -->
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffa500;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#44bd32;stop-opacity:1" />
+    </linearGradient>
+    <!-- 阴影 -->
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="200" height="200" rx="40" fill="#1a1a2e"/>
+  
+  <!-- 米粒形状 - 婴儿脸 -->
+  <ellipse cx="100" cy="90" rx="50" ry="45" fill="#ffeaa7" filter="url(#shadow2)"/>
+  
+  <!-- 头发 - 小米粒 -->
+  <ellipse cx="80" cy="55" rx="12" ry="8" fill="#fdcb6e" transform="rotate(-20 80 55)"/>
+  <ellipse cx="100" cy="50" rx="12" ry="8" fill="#fdcb6e"/>
+  <ellipse cx="120" cy="55" rx="12" ry="8" fill="#fdcb6e" transform="rotate(20 120 55)"/>
+  
+  <!-- 眼睛 - 视频图标 -->
+  <g transform="translate(80, 85)">
+    <circle cx="0" cy="0" r="12" fill="#fff"/>
+    <polygon points="-4,-5 -4,5 6,0" fill="url(#grad1)"/>
+  </g>
+  <g transform="translate(120, 85)">
+    <circle cx="0" cy="0" r="12" fill="#fff"/>
+    <polygon points="-4,-5 -4,5 6,0" fill="url(#grad1)"/>
+  </g>
+  
+  <!-- 微笑 -->
+  <path d="M 85 105 Q 100 118 115 105" fill="none" stroke="#e17055" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- 腮红 -->
+  <circle cx="70" cy="100" r="8" fill="#ff7675" opacity="0.5"/>
+  <circle cx="130" cy="100" r="8" fill="#ff7675" opacity="0.5"/>
+  
+  <!-- 播放按钮装饰 -->
+  <circle cx="100" cy="155" r="20" fill="url(#grad2)" filter="url(#shadow2)"/>
+  <polygon points="93,145 93,165 110,155" fill="#fff"/>
+  
+  <!-- 底部文字 -->
+  <text x="100" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff" opacity="0.8">RICEBABY</text>
+</svg>
