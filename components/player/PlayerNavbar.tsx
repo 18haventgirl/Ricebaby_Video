@@ -16,7 +16,7 @@ export function PlayerNavbar({ isPremium }: { isPremium?: boolean }) {
                     <div className="flex items-center gap-2 sm:gap-4 min-w-0">
                         <button
                             onClick={() => router.push(isPremium ? '/premium' : '/')}
-                            className="flex items-center justify-center hover:opacity-90 hover:scale-[1.02] active:scale-95 transition-all duration-200 flex-shrink-0 cursor-pointer focus:outline-none rounded-lg"
+                            className="flex items-center justify-center hover:opacity-90 hover:scale-[1.02] active:scale-95 transition-all duration-200 flex-shrink-0 cursor-pointer outline-none focus:outline-none focus-visible:outline-none focus-visible:ring-0 rounded-lg"
                             title={isPremium ? "返回高级主页" : "返回首页"}
                         >
                             <Image

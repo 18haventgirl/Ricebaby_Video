@@ -40,7 +40,7 @@ export function Navbar({ onReset, isPremiumMode = false }: NavbarProps) {
                     <div className="flex items-center justify-between gap-2 sm:gap-4">
                         <Link
                             href={isPremiumMode ? '/premium' : '/'}
-                            className="flex items-center gap-2 sm:gap-3 hover:opacity-90 hover:scale-[1.02] active:scale-95 transition-all duration-200 cursor-pointer min-w-0 focus:outline-none rounded-lg"
+                            className="flex items-center gap-2 sm:gap-3 hover:opacity-90 hover:scale-[1.02] active:scale-95 transition-all duration-200 cursor-pointer min-w-0 outline-none focus:outline-none focus-visible:outline-none focus-visible:ring-0 rounded-lg"
                             onClick={onReset}
                             data-focusable
                         >
