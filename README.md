@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://ricebabyvideo.pages.dev/">🚀 在线体验</a> · 
+  <a href="https://ricebaby-video.pages.dev/">🚀 在线体验</a> · 
   <a href="#-快速部署">📦 快速部署</a> · 
   <a href="#-核心功能">✨ 功能特性</a>
 </p>
