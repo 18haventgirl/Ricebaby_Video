@@ -6,7 +6,6 @@
 
 ## 📋 目录
 
-- [行为准则](#行为准则)
 - [快速开始](#快速开始)
 - [开发环境设置](#开发环境设置)
 - [代码规范](#代码规范)
@@ -16,20 +15,6 @@
 - [设计系统规范](#设计系统规范)
 - [测试要求](#测试要求)
 - [常见问题](#常见问题)
-
-## 🤝 行为准则
-
-我们致力于构建一个开放、友好、包容的社区环境。请在参与项目时：
-
-- ✅ 保持尊重和礼貌
-- ✅ 欢迎不同的观点和经验
-- ✅ 接受建设性的批评
-- ✅ 专注于对社区最有利的事情
-- ❌ 不要使用性别化的语言或图像
-- ❌ 不要进行人身攻击或政治攻击
-- ❌ 不要骚扰或歧视他人
-
-详细的行为准则请参阅 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)。
 
 ## 🚀 快速开始
 
@@ -60,11 +45,11 @@
 
 确保你的开发环境满足以下要求：
 
-| 工具 | 最低版本 | 推荐版本 | 检查命令 |
-|------|----------|----------|----------|
-| **Node.js** | 20.0.0 | 22.x LTS | `node --version` |
-| **npm** | 9.0.0 | 10.x | `npm --version` |
-| **Git** | 2.30.0 | 最新版本 | `git --version` |
+| 工具        | 最低版本 | 推荐版本 | 检查命令         |
+| ----------- | -------- | -------- | ---------------- |
+| **Node.js** | 20.0.0   | 22.x LTS | `node --version` |
+| **npm**     | 9.0.0    | 10.x     | `npm --version`  |
+| **Git**     | 2.30.0   | 最新版本 | `git --version`  |
 
 ### 详细设置步骤
 
@@ -181,11 +166,11 @@ export function SearchPage() {
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
   // ... 大量逻辑
-  
+
   const handleSearch = async () => {
     // ... 50+ 行逻辑
   };
-  
+
   return <div>{/* JSX */}</div>;
 }
 
@@ -214,13 +199,13 @@ export function VideoCard() {
   const formatDuration = (seconds: number) => {
     // ... 格式化逻辑
   };
-  
+
   const formatDate = (date: Date) => {
     // ... 格式化逻辑
   };
-  
+
   // ... 更多工具函数
-  
+
   return <div>{/* JSX */}</div>;
 }
 
@@ -244,25 +229,37 @@ export function formatDate(date: Date) { /* ... */ }
 
 ```typescript
 // ❌ 不好：player-utils.ts 包含 200 行
-export function parseHLS() { /* ... */ }
-export function handlePlayback() { /* ... */ }
-export function manageQuality() { /* ... */ }
+export function parseHLS() {
+  /* ... */
+}
+export function handlePlayback() {
+  /* ... */
+}
+export function manageQuality() {
+  /* ... */
+}
 // ... 更多函数
 
 // ✅ 好：拆分为多个文件
 // lib/utils/player/index.ts
-export * from './hls-parser';
-export * from './playback-manager';
-export * from './quality-manager';
+export * from "./hls-parser";
+export * from "./playback-manager";
+export * from "./quality-manager";
 
 // lib/utils/player/hls-parser.ts
-export function parseHLS() { /* ... */ }
+export function parseHLS() {
+  /* ... */
+}
 
 // lib/utils/player/playback-manager.ts
-export function handlePlayback() { /* ... */ }
+export function handlePlayback() {
+  /* ... */
+}
 
 // lib/utils/player/quality-manager.ts
-export function manageQuality() { /* ... */ }
+export function manageQuality() {
+  /* ... */
+}
 ```
 
 #### 2. TypeScript 规范
@@ -288,10 +285,10 @@ function processData(data: VideoData) {
 
 // ✅ 或使用 unknown（需要类型检查）
 function processData(data: unknown) {
-  if (typeof data === 'object' && data !== null && 'value' in data) {
+  if (typeof data === "object" && data !== null && "value" in data) {
     return (data as { value: string }).value;
   }
-  throw new Error('Invalid data');
+  throw new Error("Invalid data");
 }
 ```
 
@@ -320,7 +317,7 @@ interface VideoCardProps {
 }
 
 // ✅ 使用 type 定义联合类型
-type ThemeMode = 'light' | 'dark' | 'system';
+type ThemeMode = "light" | "dark" | "system";
 ```
 
 #### 3. React 组件规范
@@ -365,12 +362,12 @@ export function Component({ prop1, prop2 }: ComponentProps) {
   // 4. Hooks
   const [state, setState] = useState();
   const router = useRouter();
-  
+
   // 5. 事件处理函数
   const handleClick = () => {
     // ...
   };
-  
+
   // 6. 渲染
   return (
     <div>{/* JSX */}</div>
@@ -470,29 +467,29 @@ const fn = () => {};
 ```typescript
 // ✅ 全大写 + 下划线
 const MAX_VIDEO_DURATION = 7200;
-const API_BASE_URL = 'https://api.example.com';
+const API_BASE_URL = "https://api.example.com";
 ```
 
 #### 6. 导入顺序
 
 ```typescript
 // 1. React 和 Next.js
-import React from 'react';
-import { useState } from 'react';
-import Link from 'next/link';
+import React from "react";
+import { useState } from "react";
+import Link from "next/link";
 
 // 2. 第三方库
-import { create } from 'zustand';
+import { create } from "zustand";
 
 // 3. 项目别名导入
-import { Button } from '@/components/ui/Button';
-import { formatDate } from '@/lib/utils/date-utils';
+import { Button } from "@/components/ui/Button";
+import { formatDate } from "@/lib/utils/date-utils";
 
 // 4. 相对路径导入
-import { LocalComponent } from './LocalComponent';
+import { LocalComponent } from "./LocalComponent";
 
 // 5. 类型导入
-import type { Video } from '@/lib/types/video';
+import type { Video } from "@/lib/types/video";
 ```
 
 ## 🔄 Git 工作流程
@@ -730,8 +727,8 @@ PR 会自动更新。
 
 // 或自定义玻璃效果
 <div className="
-  backdrop-blur-xl 
-  backdrop-saturate-180 
+  backdrop-blur-xl
+  backdrop-saturate-180
   backdrop-brightness-110
   bg-white/10
   border border-white/20
@@ -743,8 +740,8 @@ PR 会自动更新。
 ```typescript
 // ✅ 使用标准过渡曲线
 <button className="
-  transition-all 
-  duration-300 
+  transition-all
+  duration-300
   ease-out
   hover:scale-105
 ">
@@ -840,6 +837,7 @@ find . -type f -not -path "*/node_modules/*" -not -path "*/.next/*" -not -path "
 ### Q2: 如何让文件保持在 150 行以内？
 
 **A:** 参考 [文件长度限制](#1-文件长度限制-️) 部分的重构策略。关键是：
+
 - 提取组件
 - 提取 Hook
 - 提取工具函数
@@ -906,7 +904,7 @@ git push origin feat/your-feature --force
 
 ### Q10: 如何报告安全漏洞？
 
-请查看 [SECURITY.md](SECURITY.md) 了解安全漏洞报告流程。不要在公开 Issue 中讨论安全问题。
+请在 [GitHub Issues](https://github.com/18haventgirl/RicebabyVideo/issues) 中报告安全问题，或直接联系维护者 [@18haventgirl](https://github.com/18haventgirl)。请不要在公开 Issue 中讨论安全漏洞的细节。
 
 ## 📞 需要帮助？
 

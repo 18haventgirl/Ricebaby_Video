@@ -20,7 +20,6 @@
   [![React](https://img.shields.io/badge/React-19.2-blue?style=for-the-badge&logo=react)](https://react.dev/)
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-  [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 </p>
 
 ---
@@ -35,14 +34,14 @@
 
 ### 💎 核心优势
 
-| 优势 | 说明 |
-|------|------|
-| 🔍 **多源聚合** | 同时搜索多个视频源，SSE 实时返回结果，告别逐个查找 |
-| 🎥 **智能播放** | HLS 流媒体、自动切源、画中画、Chromecast 投屏、弹幕支持 |
-| 🎨 **Liquid Glass** | 独特的液态玻璃设计语言，玻璃拟态 + 光影交互 + 流畅动画 |
-| 📱 **全端适配** | 桌面、平板、手机、TV 大屏完美适配，支持 PWA 安装 |
-| 🔒 **隐私优先** | 所有数据本地存储，支持多账户隔离，不收集任何用户数据 |
-| 🆓 **完全免费** | MIT 开源协议，可部署到 Vercel、Cloudflare Pages 或自己的服务器 |
+| 优势                | 说明                                                           |
+| ------------------- | -------------------------------------------------------------- |
+| 🔍 **多源聚合**     | 同时搜索多个视频源，SSE 实时返回结果，告别逐个查找             |
+| 🎥 **智能播放**     | HLS 流媒体、自动切源、画中画、Chromecast 投屏、弹幕支持        |
+| 🎨 **Liquid Glass** | 独特的液态玻璃设计语言，玻璃拟态 + 光影交互 + 流畅动画         |
+| 📱 **全端适配**     | 桌面、平板、手机、TV 大屏完美适配，支持 PWA 安装               |
+| 🔒 **隐私优先**     | 所有数据本地存储，支持多账户隔离，不收集任何用户数据           |
+| 🆓 **完全免费**     | MIT 开源协议，可部署到 Vercel、Cloudflare Pages 或自己的服务器 |
 
 ---
 
@@ -362,10 +361,10 @@ docker run -d -p 3000:3000 \
 
 ### 可用环境变量：
 
-| 变量名                         | 说明             | 默认值                  |
-| ------------------------------ | ---------------- | ----------------------- |
+| 变量名                         | 说明             | 默认值                         |
+| ------------------------------ | ---------------- | ------------------------------ |
 | `NEXT_PUBLIC_SITE_TITLE`       | 浏览器标签页标题 | `RicebabyVideo - 视频聚合平台` |
-| `NEXT_PUBLIC_SITE_DESCRIPTION` | 站点描述         | `视频聚合平台`          |
+| `NEXT_PUBLIC_SITE_DESCRIPTION` | 站点描述         | `视频聚合平台`                 |
 | `NEXT_PUBLIC_SITE_NAME`        | 站点头部名称     | `RicebabyVideo`                |
 
 ### 配置示例：
@@ -621,26 +620,26 @@ docker run -e PORT=8080 -p 8080:8080 --name ricebabyvideo 18haventgirl/ricebabyv
 
 ## 📚 全部环境变量参考
 
-| 变量名                                        | 说明                                                          | 默认值                  |
-| --------------------------------------------- | ------------------------------------------------------------- | ----------------------- |
-| `ADMIN_PASSWORD`                              | 管理员密码                                                    | -                       |
-| `ACCESS_PASSWORD`                             | 访问密码（向后兼容，等同于 `ADMIN_PASSWORD`）                 | -                       |
-| `ACCOUNTS`                                    | 多账户配置，格式：`密码:名称[:角色[:权限1\|权限2]]`，逗号分隔 | -                       |
-| `PREMIUM_PASSWORD`                            | 高级内容独立密码，访问 `/premium` 时需输入                    | -                       |
-| `PERSIST_SESSION`                             | 是否持久化登录会话                                            | `true`                  |
-| `PORT`                                        | 自定义应用端口                                                | `3000`                  |
+| 变量名                                        | 说明                                                          | 默认值                         |
+| --------------------------------------------- | ------------------------------------------------------------- | ------------------------------ |
+| `ADMIN_PASSWORD`                              | 管理员密码                                                    | -                              |
+| `ACCESS_PASSWORD`                             | 访问密码（向后兼容，等同于 `ADMIN_PASSWORD`）                 | -                              |
+| `ACCOUNTS`                                    | 多账户配置，格式：`密码:名称[:角色[:权限1\|权限2]]`，逗号分隔 | -                              |
+| `PREMIUM_PASSWORD`                            | 高级内容独立密码，访问 `/premium` 时需输入                    | -                              |
+| `PERSIST_SESSION`                             | 是否持久化登录会话                                            | `true`                         |
+| `PORT`                                        | 自定义应用端口                                                | `3000`                         |
 | `NEXT_PUBLIC_SITE_TITLE`                      | 浏览器标签页标题                                              | `RicebabyVideo - 视频聚合平台` |
-| `NEXT_PUBLIC_SITE_DESCRIPTION`                | 站点描述                                                      | `视频聚合平台`          |
+| `NEXT_PUBLIC_SITE_DESCRIPTION`                | 站点描述                                                      | `视频聚合平台`                 |
 | `NEXT_PUBLIC_SITE_NAME`                       | 站点头部名称                                                  | `RicebabyVideo`                |
-| `SUBSCRIPTION_SOURCES`                        | 自动订阅源配置（服务端）                                      | -                       |
-| `NEXT_PUBLIC_SUBSCRIPTION_SOURCES`            | 自动订阅源配置（客户端）                                      | -                       |
-| `IPTV_SOURCES` / `NEXT_PUBLIC_IPTV_SOURCES`   | IPTV 直播源配置                                               | -                       |
-| `MERGE_SOURCES` / `NEXT_PUBLIC_MERGE_SOURCES` | 启用合并同名源显示（`true`/`1`）                              | -                       |
-| `AD_KEYWORDS` / `NEXT_PUBLIC_AD_KEYWORDS`     | 广告过滤关键词                                                | -                       |
-| `AD_KEYWORDS_FILE`                            | 广告关键词文件路径                                            | -                       |
-| `NEXT_PUBLIC_DANMAKU_API_URL`                 | 弹幕聚合 API 地址                                             | -                       |
-| `UPSTASH_REDIS_REST_URL`                      | Upstash Redis REST URL（跨设备同步：配置、历史、收藏）        | -                       |
-| `UPSTASH_REDIS_REST_TOKEN`                    | Upstash Redis REST Token                                      | -                       |
+| `SUBSCRIPTION_SOURCES`                        | 自动订阅源配置（服务端）                                      | -                              |
+| `NEXT_PUBLIC_SUBSCRIPTION_SOURCES`            | 自动订阅源配置（客户端）                                      | -                              |
+| `IPTV_SOURCES` / `NEXT_PUBLIC_IPTV_SOURCES`   | IPTV 直播源配置                                               | -                              |
+| `MERGE_SOURCES` / `NEXT_PUBLIC_MERGE_SOURCES` | 启用合并同名源显示（`true`/`1`）                              | -                              |
+| `AD_KEYWORDS` / `NEXT_PUBLIC_AD_KEYWORDS`     | 广告过滤关键词                                                | -                              |
+| `AD_KEYWORDS_FILE`                            | 广告关键词文件路径                                            | -                              |
+| `NEXT_PUBLIC_DANMAKU_API_URL`                 | 弹幕聚合 API 地址                                             | -                              |
+| `UPSTASH_REDIS_REST_URL`                      | Upstash Redis REST URL（跨设备同步：配置、历史、收藏）        | -                              |
+| `UPSTASH_REDIS_REST_TOKEN`                    | Upstash Redis REST Token                                      | -                              |
 
 ---
 
@@ -877,12 +876,6 @@ RicebabyVideo v4.5.0+ 已增加多级回退机制，会依次尝试 HLS.js、原
 2. **功能建议**：在 Issues 中提出你的想法
 3. **代码贡献**：Fork → Branch → PR
 4. **文档改进**：直接提交 PR
-
----
-
-## 📄 许可证
-
-本项目基于 [MIT 许可证](LICENSE) 开源。
 
 ---
 
