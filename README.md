@@ -906,15 +906,3 @@ RicebabyVideo v4.5.0+ 已增加多级回退机制，会依次尝试 HLS.js、原
   <br>
   如果这个项目对你有帮助，请考虑给一个 ⭐️
 </div>
-
----
-
-# ☕ Buy Me A Coffee
-
-[![Buy Me A Coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=18haventgirl&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff)](https://www.buymeacoffee.com/18haventgirl)
-
----
-
-## ⭐ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=18haventgirl/RicebabyVideo&type=date&legend=top-left)](https://www.star-history.com/#18haventgirl/RicebabyVideo&type=date&legend=top-left)
